@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
 @font-face {
     font-family: "police1";
     src: url("../Gemini\ Moon.otf");
 }
+
 @keyframes banniere1 {
     0% {
         background-color: dimgrey;
@@ -15,6 +17,11 @@
     }
 }
 
+@font-face {
+    font-family: "fire";
+    src: url("PlayWithFire.ttf");
+}
+
 .menu {
     display: flex;
     flex-direction: wrap;
@@ -24,34 +31,42 @@
     background-color: rgba(0, 0, 0, 0.777);
     height: 10vh;
 }
+
 .item1 {
     transition: all 4s;
 }
+
 .item1:hover {
     color: red;
     transform: scaleX(2);
 }
+
 .item2 {
     transition: all 1s steps(4);
 }
+
 .item2:hover {
     color: pink;
     transform: skewY(25deg);
 }
+
 .item3 {
     transition: all 2s;
 }
+
 .item3:hover {
     background-color: aquamarine;
     transform: translateY(200%);
     font-family: "police1";
 }
+
 .grid {
     display: grid;
     height: 70vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr 2fr 1fr 2fr;
+    grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
 }
+
 .banniere1 {
     animation: banniere1 5s infinite;
     grid-row: 3 / 4;
@@ -61,17 +76,21 @@
     font-style: bold;
     text-shadow: 2px 2px 2px darkred;
 }
+
 i {
     transition: background-color 2s, font-size 2s;
 }
+
 i:hover {
     --backgroundcolor: blue;
     background-color: var(--backgroundcolor);
     font-size: 4em;
 }
+
 .police2:hover {
     transform: rotateX(180deg);
 }
+
 .banniere2 {
     grid-row: 5 / 6;
     text-align: center;
@@ -81,4 +100,13 @@ i:hover {
     --variable1: rgb(220, 153, 31);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, var(--variable1) 50%, rgba(0,0,0,1) 100%);
     box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.banniere3 {
+    grid-row: 7 / 8;
+    text-align: center;
+    font-size: 2em;
+    background: rgb(36,0,0);
+    background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(255,0,0,1) 50%, rgba(61,0,0,1) 100%);
+    font-family: "fire";
 }
