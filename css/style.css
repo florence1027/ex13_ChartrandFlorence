@@ -65,7 +65,8 @@ i {
     transition: background-color 2s, font-size 2s;
 }
 i:hover {
-    background-color: blue;
+    --backgroundcolor: blue;
+    background-color: var(--backgroundcolor);
     font-size: 4em;
 }
 .police2:hover {
@@ -77,6 +78,7 @@ i:hover {
     font-family: 'Bungee Spice';
     font-size: 2em;
     font-style: bold;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(220, 153, 31) 50%, rgba(0,0,0,1) 100%);
+    --variable1: rgb(220, 153, 31);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, var(--variable1) 50%, rgba(0,0,0,1) 100%);
     box-shadow: 5px 5px 15px 5px #000000;
 }
