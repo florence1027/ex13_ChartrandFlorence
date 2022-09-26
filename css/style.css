@@ -5,10 +5,10 @@
 }
 @keyframes banniere1 {
     0% {
-        background-color: black;
+        background-color: dimgrey;
     }
     50% {
-        background-color: rgba(109,8,3,1);
+        background-color: white;
     }
     100% {
         background-color: dimgrey;
@@ -59,7 +59,7 @@
     font-family: "police1";
     font-size: 3em;
     font-style: bold;
-    text-shadow: 2px 2px 2px #CE5937;
+    text-shadow: 2px 2px 2px darkred;
 }
 i {
     transition: background-color 2s, font-size 2s;
@@ -77,6 +77,6 @@ i:hover {
     font-family: 'Bungee Spice';
     font-size: 2em;
     font-style: bold;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(198,157,33,1) 50%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(220, 153, 31) 50%, rgba(0,0,0,1) 100%);
     box-shadow: 5px 5px 15px 5px #000000;
 }
